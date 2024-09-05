@@ -3,7 +3,7 @@ A lorem ipsum genertor which uses you childs kidisms(the words they pronounce in
 
 Sign up and add your Kidisms and Kuotes to your very own personalised lorem ipsum generator database, guaranteed to bring a smile whenever you generate that usually plain old boring text
 
-# Tech Stack
+# Tech Stack
 
 - Vite
 - React
