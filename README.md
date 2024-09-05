@@ -6,6 +6,7 @@ Sign up and add your kidisms and quotes to your very own personalised lorem ipsu
 # Tech Stack
 
 - Vite
+- React
 - Tailwindcss
 - JavaScript
 - Axios
