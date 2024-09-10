@@ -2,6 +2,7 @@ import React from 'react'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { NavLink } from 'react-router-dom'
+import logo from '../assets/images/placeholder-logo.png'
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -13,7 +14,7 @@ function classNames(...classes) {
 }
 
 function activePage(isActive) {  
-    return `rounded-md px-3 py-2 text-sm font-medium ${isActive ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'}`
+    return `rounded-md px-3 py-2 text-sm font-medium ${isActive ? 'bg-gray-900 text-white' : 'text-black hover:bg-gray-700 hover:text-white'}`
 }
 
 export default function Navbar() {
@@ -32,12 +33,14 @@ export default function Navbar() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
+
               {/* CHANGE FOR OWN LOGO */}
               <img
                 alt="Your Company"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                src={logo}
                 className="h-8 w-auto"
               />
+
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
