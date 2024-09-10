@@ -13,10 +13,10 @@ export default function Landing() {
       </div>
       <div className='pb-3 flex'>
         <NavLink  to={'/sign-in'}>
-          <button className='sign-button bg-[#7ca17e] text-second p-1.5 pr-3.5 pl-3.5 mr-3 rounded-lg shadow-[20px_25px_40px_-15px_#414529]' >Sign in</button>
+          <button className='sign-button bg-[#7ca17e] text-black p-1.5 pr-3.5 pl-3.5 mr-3 rounded-lg shadow-[20px_25px_40px_-15px_#414529]' >Sign in</button>
         </NavLink>
         <NavLink  to={'/sign-up'}>
-          <button className='sign-button bg-[#7ca17e] text-second p-1.5 pr-3.5 pl-3.5 ml-3 rounded-lg shadow-[20px_25px_40px_-15px_#414529]' >Sign up</button>
+          <button className='sign-button bg-[#7ca17e] text-black p-1.5 pr-3.5 pl-3.5 ml-3 rounded-lg shadow-[20px_25px_40px_-15px_#414529]' >Sign up</button>
         </NavLink>
       </div>
       <div className='ml-6 mr-6'> 
@@ -24,7 +24,7 @@ export default function Landing() {
         <p>just create non personalised placeholder text from our data base</p>
       </div>
       <NavLink  to={'/get-place-holder-text'}>
-        <button className='sign-button bg-[#7ca17e] text-second p-1.5 pr-3.5 pl-3.5 mt-4 rounded-lg shadow-[20px_25px_40px_-15px_#414529]'>Get PlaceHolder Text</button> 
+        <button className='sign-button bg-[#7ca17e] text-black p-1.5 pr-3.5 pl-3.5 mt-4 rounded-lg shadow-[20px_25px_40px_-15px_#414529]'>Get PlaceHolder Text</button> 
       </NavLink>
       <div className='kidism-def bg-second m-6 p-5 rounded-3xl shadow-[20px_25px_40px_-15px_#414529] max-w-2xl'>
         <p><em><strong>Kidism (noun):</strong></em> A charming or humorous linguistic mistake made by children when they mispronounce or incorrectly use words as they learn to speak. These errors often result in creative, cute, or funny versions of the intended words or phrases. Kidisms are a natural part of language development and are usually endearing to parents and adults. Examples include saying "carnack" instead of "car snack" or "choclick" instead of "chocolate"</p>
