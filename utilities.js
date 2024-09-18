@@ -116,5 +116,4 @@ function createPlaceholderTextArr(obj, numParagraphs, numWords, loremIpsum) {
     return placeHolderTextArr
 }
 
-// module.exports = {numOptions, getRandomNum, getRandomNumDiffFromLast, createPlaceholderTextArr}
 export {numOptions, getRandomNum, getRandomNumDiffFromLast, createPlaceholderTextArr}
