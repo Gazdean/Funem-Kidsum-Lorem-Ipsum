@@ -1,5 +1,4 @@
 const{numOptions, getRandomNum, getRandomNumDiffFromLast}= require("../utilities.js")
-// import {numOptions, getRandomNum, getRandomNumDiffFromLast} from '../utilities.js'
 
 describe('numOptions', () => {
     it('returns an array', () => {
