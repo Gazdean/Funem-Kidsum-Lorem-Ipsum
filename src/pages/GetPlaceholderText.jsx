@@ -39,7 +39,7 @@ export default function GetPlaceholderText() {
     },[numWords, numParagraphs, loremIpsum, incKuotes])
 
     return (
-        <div className='flex flex-col h-[93vh] pt-6 bg-main items-center'>
+        <div className='flex flex-col h-[93vh] pt-6 items-center'>
 
             <div id='placeholder-choices'>
                 <div id='num-paragraphs-container' className='flex justify-center mb-4'>
