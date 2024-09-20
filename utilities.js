@@ -116,4 +116,8 @@ function createPlaceholderTextArr(obj, numParagraphs, numWords, loremIpsum) {
     return placeHolderTextArr
 }
 
-export {numOptions, getRandomNum, getRandomNumDiffFromLast, createPlaceholderTextArr}
+function getTodaysDate() {
+    return new Date().toISOString().split('T')[0]
+}
+
+export {numOptions, getRandomNum, getRandomNumDiffFromLast, createPlaceholderTextArr, getTodaysDate}
