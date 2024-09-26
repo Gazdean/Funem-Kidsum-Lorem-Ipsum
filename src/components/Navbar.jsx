@@ -2,7 +2,7 @@ import React from 'react'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { NavLink } from 'react-router-dom'
-import logo from '../assets/images/placeholder-logo.png'
+import logo from '../assets/images/logo.png'
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -19,7 +19,7 @@ function activePage(isActive) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-lime-100">
+    <Disclosure id='top-of-page' as="nav" className="bg-lime-100">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -36,10 +36,10 @@ export default function Navbar() {
 
               {/* CHANGE FOR OWN LOGO */}
               <img
-                alt="Your Company"
-                src={logo}
-                className="h-8 w-auto"
-              />
+                    alt="Your Company"
+                    src={logo}
+                    className="h-8 md:h-12 w-auto rounded-lg shadow-[10px_12px_30px_-2px_black]"
+                />
 
             </div>
             <div className="hidden sm:ml-6 sm:block">

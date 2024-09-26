@@ -9,7 +9,7 @@ export default {
       colors :{
         main: '#ccd97a',
         second: '#ecf4ba',
-        third: '#bac286'
+        third: '#d6e095'
       }
     },
   },
