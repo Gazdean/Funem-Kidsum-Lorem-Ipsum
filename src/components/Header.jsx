@@ -2,7 +2,6 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Logo from './Logo'
 import NavMenu from './NavMenu'
-import MenuButton from './MenuButton'
 
 function activePage(isActive) {  
     return `rounded-md px-3 py-2 text-sm font-medium ${isActive ? 'bg-gray-900 text-white' : 'text-black hover:bg-gray-700 hover:text-white'}`

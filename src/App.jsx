@@ -16,6 +16,7 @@ export default function App() {
   return (
     <div>
       <Header />
+      <div id="top-of-page" className='scroll-mt-32'></div>
       <Routes> 
         <Route path='/' element={<Landing />}/>
         <Route path='/add-to-kidictionary-kuotes' element={<AddToKidictionaryKuotes />}/>

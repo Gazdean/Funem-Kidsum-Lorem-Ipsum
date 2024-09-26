@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import NavLinks from './NavLinks'
 
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import MenuButton from './MenuButton'
 
 export default function NavMenu() {
