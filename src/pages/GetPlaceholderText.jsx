@@ -39,7 +39,7 @@ export default function GetPlaceholderText() {
     },[numWords, numParagraphs, loremIpsum, incKuotes])
 
     return (
-        <div className='flex flex-col h-[93vh] pt-6 items-center'>
+        <div id='placeholder-text-page' className='flex flex-col h-[93vh] pt-6 pb-10 items-center bg-main'>
 
             <div id='placeholder-choices'>
                 <div id='num-paragraphs-container' className='flex justify-center mb-4'>
@@ -93,12 +93,12 @@ export default function GetPlaceholderText() {
                 </label>
             </div>
 
-            <div id='placeholder-result-container' className='result flex flex-col h-[93vh] w-[90vw] lg:w-[600px] m-4 border-2 border-second p-4'>         
+            <div id='placeholder-result-container' className='result flex flex-col h-[93vh] w-[90vw] lg:w-[600px] m-4 bg-second p-4 rounded-lg shadow-[20px_25px_40px_-15px_#414529]'>         
                 <button className='flex justify-end items-center mb-4' onClick={()=>{copyToClipboard()}}>
                     <p className='mr-2 text-xs bg-second rounded-lg p-1' hidden={hideCopied}>copied to clipboard</p>
                     <DocumentDuplicateIcon
                         aria-hidden="true"
-                        className="h-8 w-8 text-gray-600 cursor-pointer rounded-lg m bg-second"
+                        className="h-8 w-8 text-gray-600 cursor-pointer rounded-lg border border-main"
                     />
                 </button>
                 <div ref={textRef} id='complete-placeholder-text'>
