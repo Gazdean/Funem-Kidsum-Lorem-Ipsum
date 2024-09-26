@@ -2,14 +2,11 @@ import React, { useState } from 'react'
 import NavLinks from './NavLinks'
 
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import MenuButton from './MenuButton'
 
 export default function NavMenu() {
 
     const [isOpen, setIsOpen] = useState(false)
-
-    function toggleNav() {
-        setIsOpen(!isOpen)
-    }
 
     return (
         <>
@@ -18,9 +15,7 @@ export default function NavMenu() {
                 <NavLinks />
             </nav>
             <div className="md:hidden">
-                <button onClick={toggleNav}>
-                {isOpen ? <XMarkIcon aria-hidden="true" className="h-6 w-6" /> : <Bars3Icon aria-hidden="true" className="block h-6 w-6" />}
-                </button>
+                <MenuButton isOpen={isOpen} setIsOpen={setIsOpen}/>
             </div>
             </div>
             {isOpen && (
