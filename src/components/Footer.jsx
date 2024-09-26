@@ -4,6 +4,7 @@ import { ChevronUpIcon } from "@heroicons/react/24/outline";
 import logo from "../assets/images/logo.png";
 import { HashLink } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
+import Logo from "./Logo";
 
 export default function Footer() {
   return (
@@ -38,12 +39,8 @@ export default function Footer() {
       </div>
 
       <div className="flex justify-center items-center w-full pb-2">
-        <img
-          alt="Your Company"
-          src={logo}
-          className="h-8 md:h-12 w-auto rounded-lg mr-5"
-        />
-        <p className="text-xs md:text-base">What kids say!!!</p>
+        <Logo height='h-8' responsiveClasses={'md:h-12'}/>
+        <p className="text-xs md:text-base ml-4">What kids say!!!</p>
       </div>
       <p id="copyright" className="text-xs md:text-base">
         ©FunenKidismLoremIpson 2024
