@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 export default function Landing() {
   return (
-    <div className='app columns-1 bg-main min-h-[78vh] w-full overflow-hidden border-r text-center flex flex-col items-center pt-4 pb-4 md:pt-10'>
+    <div className='app columns-1 bg-main min-h-[78vh] w-full overflow-hidden border-r text-center flex flex-col items-center pt-4 pb-4 md:pt-10 md:pb-10'>
       <h1 className='text-3xl sm:text-5xl pt-2 ml-3 mr-3'>Funem Kidsum Lorem Ipsum</h1>
       <div className='app-intro bg-second m-6 p-5 mb-8 rounded-3xl shadow-[20px_25px_40px_-15px_#414529] text-start max-w-2xl flex flex-col justify-center content-center'>  
         <p>Everyone knows place holder text can be just plain boring</p>
