@@ -26,14 +26,14 @@ export default function SignIn() {
         
         <h1 className='text-2xl md:text-3xl self-center mb-4'>Sign In</h1>
 
-        <label className='p-1 pl-2 text-sm md:text-base' htmlFor="email">Email: </label>
+        <label className='p-1 pl-2 text-sm md:text-base' htmlFor="email">Email </label>
         <input id="email" className='text-sm md:text-base p-1 pl-2 pr-2 rounded-lg' type="email" placeholder='johnjohnson@email.com' name='email' {...register('email', {required:true, pattern: emailRegex})}/>
         {errors.email?.type==="required"&&<p tabIndex="0" className="text-sm md:text-base text-red-700 mt-2" >An email is required</p>}
         {errors.email?.type==="pattern"&&<p tabIndex="0" className="text-sm md:text-base text-red-700 mt-2">Must be a valid email address</p>}
 
-        <label className='p-1 pl-2 text-sm md:text-base' htmlFor="password">Password: </label>
+        <label className='p-1 pl-2 text-sm md:text-base' htmlFor="password">Password </label>
         <input id="password" className='text-sm md:text-base p-1 pl-2 pr-2 rounded-lg' type="password" placeholder='password' name='password' {...register('password', {required:true, pattern: passwordRegex})}/>
-        <NavLink to="/forgot-password"className='text-blue-800 pl-2 mt-2 text-sm'>Forgot password?</NavLink>
+        <NavLink to="/reset-password"className='text-blue-800 pl-2 mt-2 text-sm'>Forgot password?</NavLink>
         {errors.password?.type==="required"&&<p tabIndex="0" className="text-sm md:text-base text-red-700 mt-2">A password is required</p>}
         {errors.password?.type==="pattern"&&<p tabIndex="0" className="text-sm md:text-base text-red-700 mt-2">Your password is between 8 and 15 characters long and contains uppercase, lowercase, numbers, and special characters.</p>}
 

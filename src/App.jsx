@@ -9,6 +9,7 @@ import Profile from './pages/Profile'
 import Register from './pages/Register'
 import GetPlaceholderText from './pages/GetPlaceholderText'
 import Footer from './components/footer'
+import ResetPassword from './pages/ResetPassword'
 
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
         <Route path='/get-place-holder-text' element={<GetPlaceholderText />}/>
         <Route path='/sign-in' element={<SignIn />}/>
         <Route path='/register' element={<Register />}/>
+        <Route path='/reset-password' element={<ResetPassword />}/>
         <Route path='/profile' element={<Profile />}/>
       </Routes>
       <Footer />
