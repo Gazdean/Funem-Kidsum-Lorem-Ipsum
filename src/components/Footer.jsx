@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <div
       id="footer-container"
-      className="flex flex-col justify-center items-center bg-gradient-to-t from-main to-second h-28 md:h-40 w-[100vw]"
+      className="flex flex-col justify-center items-center bg-gradient-to-b from-main to-second h-28 md:h-40 w-[100vw] shadow-[0px_15px_38px_1px_#414529]"
     >
       <div className="flex justify-evenly w-full items-center pb-3">
         <div className="flex items-center">
