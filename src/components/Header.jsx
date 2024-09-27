@@ -10,7 +10,7 @@ function activePage(isActive) {
 export default function Header() {
 
   return (
-    <header className="flex flex-wrap items-center justify-around w-full p-4 bg-second sticky top-0 z-[20] mx-auto">
+    <header className="flex flex-wrap items-center justify-around w-full p-4 bg-gradient-to-t from-main to-second sticky top-0 z-[20] mx-auto shadow-[0px_15px_38px_-15px_#414529]">
       <div className="pl-6">
         <nav>
           <NavLink
