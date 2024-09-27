@@ -23,7 +23,7 @@ export default function SignIn() {
   return (
     <div id="sign-in-page" className='flex justify-center items-center bg-main min-h-[80vh] md:min-h-[73vh]'>
 
-      <form id="sign-in-form" className='bg-second flex flex-col w-[100vw] md:w-1/3 pl-12 pr-12 pt-6 pb-6 rounded-2xl shadow-[20px_25px_40px_-15px_#414529]' onSubmit={handleSubmit(onSubmit)} noValidate>
+      <form id="sign-in-form" className='bg-second flex flex-col w-[100vw] md:w-1/3 pl-12 pr-12 pt-6 pb-6 ml-8 mr-8 rounded-2xl shadow-[20px_25px_40px_-15px_#414529]' onSubmit={handleSubmit(onSubmit)} noValidate>
         
         <h1 className='text-2xl md:text-3xl self-center mb-4'>Register</h1>
 
