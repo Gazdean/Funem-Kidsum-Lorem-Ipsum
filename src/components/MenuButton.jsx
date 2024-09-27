@@ -42,7 +42,8 @@ export default function MenuButton({isOpen, setIsOpen}) {
         stroke={strokeColor}
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
+        // aria-hidden="true"
+        aria-label="Expand menu button"
         strokeLinecap="round"
         strokeLinejoin="round"
         >

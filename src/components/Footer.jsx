@@ -1,7 +1,5 @@
 import React from "react";
 import { ChevronUpIcon } from "@heroicons/react/24/outline";
-
-import logo from "../assets/images/logo.png";
 import { HashLink } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
@@ -14,7 +12,7 @@ export default function Footer() {
     >
       <div className="flex justify-evenly w-full items-center pb-3">
         <div className="flex items-center">
-          <HashLink smooth to={"#top-of-page"}>
+          <HashLink smooth to={"#top-of-page"} aria-label="Return to top Link">
             <ChevronUpIcon
               aria-hidden="true"
               className="back-to-top h-5 w-5 md:h-6 md:w-6 text-gray-600 cursor-pointer rounded-lg border border-main mr-2"
