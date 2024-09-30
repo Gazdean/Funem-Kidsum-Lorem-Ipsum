@@ -6,9 +6,9 @@ import Logo from "./Logo";
 
 export default function Footer() {
   return (
-    <div
+    <footer
       id="footer-container"
-      className="flex flex-col justify-center items-center bg-gradient-to-b from-main to-second h-28 md:h-40 w-[100vw] shadow-[0px_15px_38px_1px_#414529]"
+      className="flex flex-col justify-center items-center bg-gradient-to-b from-main to-second h-28 md:h-40 w-[100vw] shadow-[0px_15px_38px_1px_#414529] z-20"
     >
       <div className="flex justify-evenly w-full items-center pb-3">
         <div className="flex items-center">
@@ -43,6 +43,6 @@ export default function Footer() {
       <p id="copyright" className="text-xs md:text-base">
         ©FunenKidismLoremIpson 2024
       </p>
-    </div>
+    </footer>
   );
 }
