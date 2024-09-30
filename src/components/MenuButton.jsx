@@ -59,31 +59,31 @@ export default function MenuButton({isOpen, setIsOpen}) {
             stroke=""
         />
 
-<path
-                    id='middle-line-1'
-                    className={`${
-                        isOpen
-                            ? "rotate-45 origin-center transition-all duration-500"
-                            : "transition-all duration-500"
-                    }`}
-                    d={midLine1Pos}
-                    style={{
-                        transformOrigin: 'center', // Center of the line
-                    }}
-                />
-                <path
-                    id='middle-line-2'
-                    className={`${
-                        isOpen
-                            ? "-rotate-45 origin-center transition-all duration-500"
-                            : "transition-all duration-500"
-                    }`}
-                    d={midLine2Pos}
-                    style={{
-                        transformOrigin: 'center', // Center of the line
-                    }}
-                />
-       
+        <path
+            id='middle-line-1'
+            className={`${
+                isOpen
+                    ? "rotate-45 origin-center transition-all duration-500"
+                    : "transition-all duration-500"
+            }`}
+            d={midLine1Pos}
+            style={{
+                transformOrigin: 'center', // Center of the line
+            }}
+        />
+
+        <path
+            id='middle-line-2'
+            className={`${
+                isOpen
+                    ? "-rotate-45 origin-center transition-all duration-500"
+                    : "transition-all duration-500"
+            }`}
+            d={midLine2Pos}
+            style={{
+                transformOrigin: 'center', // Center of the line
+            }}
+        />
 
         <path
             id='bottom-line'
