@@ -5,13 +5,14 @@ import NavMenu from './NavMenu'
 import NavLinks from './NavLinks'
 import MenuButton from './MenuButton'
 
-// function activePage(isActive) {  
-//     return `rounded-md px-3 py-2 text-sm font-medium ${isActive ? 'bg-gray-900 text-white' : 'text-black hover:bg-gray-700 hover:text-white'}`
-// }
+import defaultAvatar from '../assets/images/defaultAvatar.jpg'
 
 export default function Header() {
 
   const [isOpen, setIsOpen] = useState(false)
+  
+  const menuNavLinkClasses = 'border-2 hover:border-red-500 py-1 px-4 rounded-2xl'
+  const logoClasses = 'hover:border-2 hover:border-red-500'
 
   return (
     <header className="sticky top-0 ">
@@ -19,22 +20,22 @@ export default function Header() {
         <nav className="pl-6">
           <NavLink
             to={'/'}
-            id='navbar-home'
-            // className={ ({isActive}) => {activePage(isActive)}}
+            id='navbar-home'      
           >
-            <Logo height='h-14'/>
+            <Logo height='h-14' logoClasses={logoClasses}/>
           </NavLink>
         </nav>
         <div className='flex w-1/3 justify-end'>
-          <nav className='hidden md:flex w-full justify-between'>
-              <NavLinks />
+          <nav className='hidden md:flex w-full justify-between' >
+              <NavLinks setIsOpen={setIsOpen} classes={menuNavLinkClasses}/>
           </nav>
           <div className="md:hidden">
               <MenuButton isOpen={isOpen} setIsOpen={setIsOpen}/>
           </div>
-        </div>
+        </div> 
+        <img className="w-10 h-auto rounded-2xl" src={defaultAvatar} alt='profile avatar'></img>
       </div>
-      
+     
       <NavMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
       
     </header>
