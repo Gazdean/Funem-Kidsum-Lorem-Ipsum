@@ -25,13 +25,13 @@ export default function Register() {
         
         <h1 className='text-2xl md:text-3xl self-center mb-4'>Register</h1>
 
-        <label className='p-1 pl-2 text-sm md:text-base' htmlFor="first-name">First Name</label>
-        <input id="first-name" className={inputClasses(errors, 'firstName')} type="text" placeholder='John' name='firstName' autoComplete='first-name'{...register('firstName', {required:true})}/>
-        {errors.firstName?.type==="required" && <p tabIndex="0" className="text-sm md:text-base text-red-700 mt-2" >A first name is required</p>}
+        <label className='p-1 pl-2 text-sm md:text-base' htmlFor="username">Username</label>
+        <input id="username" className={inputClasses(errors, 'firstName')} type="text" placeholder='John' name='username' autoComplete='username'{...register('username', {required:true})}/>
+        {errors.username?.type==="required" && <p tabIndex="0" className="text-sm md:text-base text-red-700 mt-2" >A username is required</p>}
 
-        <label className='p-1 pl-2 text-sm md:text-base' htmlFor="last-name">Last Name</label>
+        {/* <label className='p-1 pl-2 text-sm md:text-base' htmlFor="last-name">Last Name</label>
         <input id="last-name" className={inputClasses(errors, 'lastName')} type="text" placeholder='Johnson' name='lastName' {...register('lastName', {required:true})}/>
-        {errors.lastName?.type==="required" && <p tabIndex="0" className="text-sm md:text-base text-red-700 mt-2" >A last name is required</p>}
+        {errors.lastName?.type==="required" && <p tabIndex="0" className="text-sm md:text-base text-red-700 mt-2" >A last name is required</p>} */}
 
         <label className='p-1 pl-2 text-sm md:text-base' htmlFor="email">Email</label>
         <input id="email" className={inputClasses(errors, 'email')} type="email" placeholder='johnjohnson@email.com' name='email' autoComplete='email'{...register('email', {required:true, pattern: emailRegex})}/>
