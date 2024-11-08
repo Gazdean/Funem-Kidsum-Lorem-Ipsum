@@ -5,6 +5,7 @@ import inputClasses from '../styles/inputClasses'
 import { emailRegex, passwordRegex } from '../../regex'
 
 export default function SignIn() {
+
   const {register, handleSubmit, formState:{errors}} = useForm()
 
   const onSubmit = async(data)=> {
@@ -25,7 +26,7 @@ export default function SignIn() {
         <h1 className='text-2xl md:text-3xl self-center mb-4'>Sign In</h1>
 
         <label className='p-1 pl-2 text-sm md:text-base' htmlFor="email">Email </label>
-        <input id="email" className={inputClasses(errors, 'email')} type="email" placeholder='johnjohnson@email.com' name='email' {...register('email', {required:true, pattern: emailRegex})}/>
+        <input id="email" className={inputClasses(errors, 'email')} type="email" autoComplete="email"placeholder='johnjohnson@email.com' name='email' {...register('email', {required:true, pattern: emailRegex})}/>
         {errors.email?.type==="required"&&<p tabIndex="0" className="text-sm md:text-base text-red-700 mt-2" >An email is required</p>}
         {errors.email?.type==="pattern"&&<p tabIndex="0" className="text-sm md:text-base text-red-700 mt-2">Must be a valid email address</p>}
 
