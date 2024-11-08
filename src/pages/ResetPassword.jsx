@@ -27,7 +27,7 @@ export default function ResetPassword() {
         <p className='mt-2 text-sm md:text-base'>Can't find it? please check your junk folder.</p>
 
         <label className='p-1 pl-2 mt-6 text-sm md:text-base' htmlFor="email">Email </label>
-        <input id="email" className={inputClasses(errors, 'email')} type="email" placeholder='johnjohnson@email.com' name='email' {...register('email', {required:true, pattern: emailRegex})}/>
+        <input id="email" className={inputClasses(errors, 'email')} type="email" autoComplete="email" placeholder='johnjohnson@email.com' name='email' {...register('email', {required:true, pattern: emailRegex})}/>
         {errors.email?.type==="required"&&<p tabIndex="0" className="text-sm md:text-base text-red-700 mt-2" >An email is required</p>}
         {errors.email?.type==="pattern"&&<p tabIndex="0" className="text-sm md:text-base text-red-700 mt-2">Must be a valid email address</p>}
 
@@ -39,5 +39,3 @@ export default function ResetPassword() {
     </div>
   )
 }
-
-// className='text-sm md:text-base p-1 pl-2 pr-2 rounded-lg border border-gray-300'

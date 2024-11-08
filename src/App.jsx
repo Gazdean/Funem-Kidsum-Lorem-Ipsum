@@ -10,6 +10,7 @@ import Register from './pages/Register'
 import GetPlaceholderText from './pages/GetPlaceholderText'
 import Footer from './components/footer'
 import ResetPassword from './pages/ResetPassword'
+import VerifyAccount from './pages/VerifyAccount'
 
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
         <Route path='/register' element={<Register />}/>
         <Route path='/reset-password' element={<ResetPassword />}/>
         <Route path='/profile' element={<Profile />}/>
+        <Route path='/verify-account' element={<VerifyAccount />}/>
       </Routes>
       <Footer />
     </div>

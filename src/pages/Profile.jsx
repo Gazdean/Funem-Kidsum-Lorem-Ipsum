@@ -10,18 +10,22 @@ export default function Profile() {
             <li className='pr-4'>name: <em>John Johnson</em></li>
             <button className='border border-red-500 px-4 py-1 rounded-lg ml-auto'>Update</button>
           </div>
+
           <div className='flex items-center pb-4'>
             <li className='pr-4'>email: <em>johnjohnson@email.com</em></li>
             <button className='border border-red-500 px-4 py-1 rounded-lg ml-auto'>Update</button>
           </div>
+
           <div className='flex items-center pb-4'>
-            <li className='pr-4'>Password:</li>
+            <li className='pr-4'>Password: *******</li>
             <button className='border border-red-500 px-4 py-1 rounded-lg ml-auto'>Update</button>
           </div>
+
           <div className='flex items-center pb-4'>
             <li className='pr-4'>Manage Dictionaries:</li>
             <button className='border border-red-500 px-4 py-1 rounded-lg ml-auto'>View</button>
           </div>
+          
           <div className='flex items-center pb-4'>
             <li className='pr-4'>Delete Profile</li>
             <button className='border border-red-500 px-4 py-1 rounded-lg ml-auto'>Delete</button>
